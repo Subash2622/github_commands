@@ -20,7 +20,7 @@ Please adhere to this project's `code of conduct`.
 
 ## Demo
 
-https://fanciful-chimera-a08bfb.netlify.app/
+https://github-practice-by-subash.vercel.app/
 
 
 ## Features
