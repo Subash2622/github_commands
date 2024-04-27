@@ -1,7 +1,25 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: lightgreen;
+}
+
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: lightgreen;
+  }
+  50% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: lightcoral;
+  }
+}
+
+/* Apply animation to body */
+body {
+  animation: changeBackgroundColor 5s ease infinite alternate; 
 }
 
 h1 {
@@ -12,11 +30,11 @@ h1 {
 
 ul {
   list-style-type: none;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
@@ -31,6 +49,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   min-width: 150px;
+  transition: background-color 0.5s ease; 
 }
 
 button:hover {
@@ -44,21 +63,24 @@ button:hover {
   padding: 10px;
   background-color: #eee;
   border-radius: 5px;
-  display: block; /* Ensure the box is initially visible */
+  display: block; 
 }
+
 .description-content {
-  display: none; /* Hide the content initially */
+  display: none;
 }
+
 .description.active .description-content {
-  display: block; /* Show the content when the description is active */
+  display: block; 
 }
+
 .description.active {
   display: block;
   background-color: #ccc;
 }
 
 .description.show {
-  display: block; 
+  display: block;
   background-color: #ccc;
 }
 
@@ -76,7 +98,7 @@ footer {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -105,6 +127,6 @@ footer {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   button {
-      min-width: 100px; 
+    min-width: 100px;
   }
 }
